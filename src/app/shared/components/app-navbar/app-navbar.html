@@ -23,9 +23,46 @@
                 class="bg-transparent border-none outline-none focus:outline-none focus:ring-0 text-code-snippet text-on-surface p-0 w-32"
                 placeholder="grep search..." type="text" />
         </div>
-        <button
-            class="border border-primary text-primary px-3 py-0.5 hover:bg-primary hover:text-on-primary transition-colors duration-75 font-bold">
+        <a
+            class="border border-primary text-primary px-3 py-0.5 hover:bg-primary hover:text-on-primary transition-colors duration-75 font-bold"
+            routerLink="/projects"
+            >
             ÚNETE A LA COMUNIDAD
-        </button>
+        </a>
+    </div>
+</header>
+
+<!-- TopAppBar -->
+<header
+    class="fixed top-0 z-100 w-full h-12 flex justify-between items-center px-margin-md bg-surface border-b border-outline-variant font-code-snippet text-code-snippet">
+    <div class="flex items-center gap-4">
+        <span
+            class="font-headline-sm text-headline-sm text-primary-fixed-dim font-bold tracking-tighter">LINUX_CLUB_v1.0</span>
+        <nav class="hidden md:flex items-center gap-6">
+            <a class="text-on-surface-variant font-label-md hover:bg-surface-container-highest hover:text-primary-fixed transition-colors"
+                href="#">/root</a>
+            <a class="text-on-surface-variant font-label-md hover:bg-surface-container-highest hover:text-primary-fixed transition-colors"
+                href="#">/bin</a>
+            <a class="text-on-surface-variant font-label-md hover:bg-surface-container-highest hover:text-primary-fixed transition-colors"
+                href="#">/etc</a>
+            <a class="text-primary-fixed-dim border-b-2 border-primary-fixed-dim pb-1 font-label-md" href="#">/usr</a>
+            <a class="text-on-surface-variant font-label-md hover:bg-surface-container-highest hover:text-primary-fixed transition-colors"
+                href="#">/var</a>
+        </nav>
+    </div>
+    <div class="flex items-center gap-4">
+        <div class="hidden sm:block">
+            <div class="flex items-center bg-surface-container px-3 py-1 border border-outline-variant">
+                <span class="material-symbols-outlined text-primary-fixed-dim mr-2 text-[18px]">search</span>
+                <input class="bg-transparent border-none focus:ring-0 text-label-md text-on-surface p-0 w-32"
+                    placeholder="grep document..." type="text">
+            </div>
+        </div>
+        <a
+            class="border border-primary text-primary px-3 py-0.5 hover:bg-primary hover:text-on-primary transition-colors duration-75 font-bold cursor-pointer"
+            routerLink="/about/join"
+            >
+            ÚNETE A LA COMUNIDAD
+        </a>
     </div>
 </header>

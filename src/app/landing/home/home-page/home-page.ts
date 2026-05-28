@@ -1,5 +1,5 @@
 import { ChangeDetectionStrategy, Component, OnDestroy, OnInit, signal } from '@angular/core';
-import { AppSidebar } from "../../../shared/components/app-sidebar/app-sidebar";
+import { RouterLink } from '@angular/router';
 
 interface LogEntry {
   time: string;
@@ -8,7 +8,7 @@ interface LogEntry {
 
 @Component({
   selector: 'app-home-page',
-  imports: [AppSidebar],
+  imports: [RouterLink],
   templateUrl: './home-page.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })

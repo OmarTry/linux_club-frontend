@@ -1,0 +1,198 @@
+<main class="flex-1 overflow-y-auto pt-12 pl-2 bg-background relative">
+    <!-- Terminal Header Decoration -->
+    <div class="sticky top-0 bg-surface-container h-8 flex items-center px-4 border-b border-outline-variant z-10">
+        <div class="flex gap-2">
+            <div class="w-3 h-3 rounded-full bg-red-500/50"></div>
+            <div class="w-3 h-3 rounded-full bg-yellow-500/50"></div>
+            <div class="w-3 h-3 rounded-full bg-green-500/50"></div>
+        </div>
+        <div class="ml-4 font-code-snippet text-body-sm opacity-70">bash — 80x24 — /usr/share/doc/ubuntu_lts</div>
+    </div>
+    <!-- Content Container with line numbers simulation -->
+    <div class="flex p-window-padding min-h-full">
+        <div class="line-numbers font-code-snippet text-body-sm leading-[1.6]">
+            1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>10<br>11<br>12<br>13<br>14<br>15<br>16<br>17<br>18<br>19<br>20<br>21<br>22<br>23<br>24<br>25<br>26<br>27<br>28<br>29<br>30<br>31<br>32<br>33<br>34<br>35<br>36<br>37<br>38<br>39<br>40<br>41<br>42<br>43<br>44<br>45<br>46<br>47<br>48<br>49<br>50<br>51<br>52<br>53<br>54<br>55<br>56<br>57<br>58<br>59<br>60<br>61<br>62<br>63<br>64<br>65<br>66<br>67<br>68<br>69<br>70<br>71<br>72<br>73<br>74<br>75<br>76<br>77<br>78<br>79<br>80
+        </div>
+        <div class="flex-1 overflow-y-auto p-window-padding font-code-snippet text-code-snippet">
+            <section class="mb-margin-lg pb-margin-md border-b-2 border-primary/20">
+                <h1 class="font-headline-lg text-headline-lg text-primary tracking-tight uppercase">UBUNTU LTS
+                    DOCUMENTATION (8)</h1>
+                <div class="flex gap-4 mt-2 font-code-snippet text-body-sm opacity-60"><span class="">SECTION: SYSTEM
+                        ADMINISTRATION</span><span class="">DATE: 2024-04-20</span></div>
+            </section>
+            <!-- SECTION 1: HISTORIA -->
+            <section class="scroll-mt-24 mb-8" id="historia">
+                <h2
+                    class="font-headline-md text-headline-md text-primary-container mb-margin-sm border-b border-primary-container/30 inline-block">
+                    01. HISTORIA: EL ORIGEN DE UBUNTU</h2>
+                <div class="space-y-4 max-w-4xl">
+                    <p class="text-on-surface leading-relaxed">
+                        <span class="text-secondary font-bold">Ubuntu</span> nace de la visión de Mark Shuttleworth y un
+                        grupo de desarrolladores de Debian que buscaban crear un sistema operativo Linux que fuera fácil
+                        de usar para el usuario promedio. A diferencia de <span class="text-tertiary">Debian</span>, que
+                        prioriza la libertad absoluta y la estabilidad conservadora, Ubuntu introdujo ciclos de
+                        lanzamiento predecibles cada seis meses.
+                    </p>
+                    <div class="p-margin-md border border-outline-variant bg-surface-container-low">
+                        <div class="text-primary-fixed-dim font-bold mb-2">ETIMOLOGÍA: UBUNTU</div>
+                        <p class="text-body-sm italic">
+                            "Humanidad hacia otros" o "Yo soy porque nosotros somos". Es una filosofía sudafricana que
+                            Canonical adoptó para simbolizar que el software debe ser accesible, gratuito y compartido
+                            por la comunidad global para el beneficio de todos.
+                        </p>
+                    </div>
+                    <p class="text-on-surface">
+                        Mientras Debian sirve como el cimiento sólido (upstream), Ubuntu refina esa base, añadiendo
+                        instaladores gráficos, controladores propietarios simplificados y una interfaz orientada al
+                        escritorio. Es, en esencia, Debian "con esteroides" de usabilidad.
+                    </p>
+                </div>
+            </section>
+            <!-- SECTION 2: VENTAJAS -->
+            <section class="scroll-mt-24 mb-8" id="ventajas">
+                <h2
+                    class="font-headline-md text-headline-md text-secondary mb-margin-sm border-b border-secondary/30 inline-block">
+                    02. ¿POR QUÉ UBUNTU? (FEATURES)</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-margin-md">
+                    <div class="p-4 border border-outline-variant hover:border-secondary transition-colors group">
+                        <div class="flex items-center gap-2 mb-2">
+                            <span class="material-symbols-outlined text-secondary" data-icon="verified">verified</span>
+                            <h3 class="font-bold text-secondary">Estabilidad LTS</h3>
+                        </div>
+                        <p class="text-body-sm text-on-surface-variant">Las versiones Long Term Support (LTS) ofrecen 5
+                            años de soporte estándar, garantizando que tu sistema sea una roca en producción.</p>
+                    </div>
+                    <div class="p-4 border border-outline-variant hover:border-secondary transition-colors group">
+                        <div class="flex items-center gap-2 mb-2">
+                            <span class="material-symbols-outlined text-secondary" data-icon="package">package</span>
+                            <h3 class="font-bold text-secondary">Ecosistema PPA &amp; Snap</h3>
+                        </div>
+                        <p class="text-body-sm text-on-surface-variant">Acceso a software actualizado mediante Personal
+                            Package Archives y el sistema de paquetería universal Snap.</p>
+                    </div>
+                    <div class="p-4 border border-outline-variant hover:border-secondary transition-colors group">
+                        <div class="flex items-center gap-2 mb-2">
+                            <span class="material-symbols-outlined text-secondary" data-icon="forum">forum</span>
+                            <h3 class="font-bold text-secondary">Soporte Comunitario</h3>
+                        </div>
+                        <p class="text-body-sm text-on-surface-variant">La comunidad más grande de Linux. Cualquier
+                            problema que tengas ya ha sido resuelto en AskUbuntu o los foros.</p>
+                    </div>
+                    <div class="p-4 border border-outline-variant hover:border-secondary transition-colors group">
+                        <div class="flex items-center gap-2 mb-2">
+                            <span class="material-symbols-outlined text-secondary" data-icon="memory">memory</span>
+                            <h3 class="font-bold text-secondary">Hardware-Ready</h3>
+                        </div>
+                        <p class="text-body-sm text-on-surface-variant">Detección automática de drivers para NVIDIA,
+                            tarjetas Wi-Fi y periféricos complejos desde el primer arranque.</p>
+                    </div>
+                </div>
+            </section>
+            <!-- SECTION 3: USUARIOS RECOMENDADOS -->
+            <section class="scroll-mt-24 mb-8" id="usuarios">
+                <h2
+                    class="font-headline-md text-headline-md text-tertiary mb-margin-sm border-b border-tertiary/30 inline-block">
+                    03. USUARIOS RECOMENDADOS</h2>
+                <div class="flex flex-wrap gap-4">
+                    <span
+                        class="px-3 py-1 bg-surface-variant border border-outline-variant text-tertiary font-code-snippet">--target=STUDENTS</span>
+                    <span
+                        class="px-3 py-1 bg-surface-variant border border-outline-variant text-tertiary font-code-snippet">--target=DEVELOPERS</span>
+                    <span
+                        class="px-3 py-1 bg-surface-variant border border-outline-variant text-tertiary font-code-snippet">--target=ENTERPRISE</span>
+                    <span
+                        class="px-3 py-1 bg-surface-variant border border-outline-variant text-tertiary font-code-snippet">--target=DATA_SCIENTISTS</span>
+                </div>
+                <p class="mt-margin-md text-on-surface-variant max-w-2xl">
+                    Ubuntu es la elección por defecto para quienes necesitan un entorno <span
+                        class="italic">"out-of-the-box"</span>. Ideal para desarrolladores de Python, Ruby o JS, y
+                    empresas que despliegan servicios en la nube (donde Ubuntu Server domina el mercado).
+                </p>
+            </section>
+            <!-- SECTION 4: GUÍA DE INSTALACIÓN -->
+            <section class="scroll-mt-24 mb-8" id="install">
+                <h2
+                    class="font-headline-md text-headline-md text-primary-container mb-margin-sm border-b border-primary-container/30 inline-block">
+                    04. GUÍA DE INSTALACIÓN (STEP-BY-STEP)</h2>
+                <div class="bg-surface-container-low border border-outline-variant p-margin-md space-y-6">
+                    <div>
+                        <div class="flex items-center gap-2 mb-2">
+                            <span
+                                class="bg-primary-container text-on-primary-container w-6 h-6 flex items-center justify-center font-bold">1</span>
+                            <span class="font-bold text-primary">Descargar ISO</span>
+                        </div>
+                        <p class="text-body-sm ml-8">Obtén la imagen oficial desde ubuntu.com/download/desktop.</p>
+                    </div>
+                    <div>
+                        <div class="flex items-center gap-2 mb-2">
+                            <span
+                                class="bg-primary-container text-on-primary-container w-6 h-6 flex items-center justify-center font-bold">2</span>
+                            <span class="font-bold text-primary">Crear Live USB</span>
+                        </div>
+                        <p class="text-body-sm ml-8">Utiliza herramientas como Rufus (Windows) o Etcher (Linux/macOS).
+                        </p>
+                    </div>
+                    <div>
+                        <div class="flex items-center gap-2 mb-2">
+                            <span
+                                class="bg-primary-container text-on-primary-container w-6 h-6 flex items-center justify-center font-bold">3</span>
+                            <span class="font-bold text-primary">Particionamiento</span>
+                        </div>
+                        <p class="text-body-sm ml-8">Recomendado: 2GB para EFI, 8GB para SWAP, y el resto para / (ext4).
+                        </p>
+                    </div>
+                    <div class="mt-4">
+                        <div class="text-primary font-bold mb-2">POST-INSTALACIÓN:</div>
+                        <div
+                            class="bg-black/40 p-4 border-l-4 border-primary-container font-code-snippet text-primary-container">
+                            <span class="opacity-50"># Actualiza los repositorios y el sistema</span><br>
+                            <span class="text-secondary">$</span> sudo apt update &amp;&amp; sudo apt upgrade -y<br><br>
+                            <span class="opacity-50"># Instala herramientas esenciales</span><br>
+                            <span class="text-secondary">$</span> sudo apt install build-essential git curl wget -y
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- SECTION 5: RECURSOS EXTERNOS -->
+            <section class="scroll-mt-24 pb-20" id="links">
+                <h2
+                    class="font-headline-md text-headline-md text-secondary mb-margin-sm border-b border-secondary/30 inline-block">
+                    05. RECURSOS EXTERNOS</h2>
+                <ul class="space-y-2">
+                    <li class="">
+                        <a class="flex items-center gap-2 text-on-surface hover:text-secondary transition-colors group"
+                            href="#">
+                            <span class="material-symbols-outlined text-sm" data-icon="open_in_new">open_in_new</span>
+                            <span
+                                class="border-b border-dashed border-outline-variant group-hover:border-secondary">Documentación
+                                Oficial de Canonical</span>
+                        </a>
+                    </li>
+                    <li class="">
+                        <a class="flex items-center gap-2 text-on-surface hover:text-secondary transition-colors group"
+                            href="#">
+                            <span class="material-symbols-outlined text-sm" data-icon="open_in_new">open_in_new</span>
+                            <span class="border-b border-dashed border-outline-variant group-hover:border-secondary">Ask
+                                Ubuntu (Comunidad Q&amp;A)</span>
+                        </a>
+                    </li>
+                    <li class="">
+                        <a class="flex items-center gap-2 text-on-surface hover:text-secondary transition-colors group"
+                            href="#">
+                            <span class="material-symbols-outlined text-sm" data-icon="open_in_new">open_in_new</span>
+                            <span
+                                class="border-b border-dashed border-outline-variant group-hover:border-secondary">Ubuntu
+                                Wiki (Deep Technical Info)</span>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+            <!-- Atmospheric terminal effect -->
+            <div class="mt-12 opacity-50 font-code-snippet text-body-sm">
+                <p class=""><span class="text-primary-container">user@ubuntu-manual:~$</span> <span
+                        class="text-on-surface opacity-80">systemctl status ubuntu-docs.service</span><span
+                        class="cursor-blink">_</span></p>
+            </div>
+        </div>
+    </div>
+</main>

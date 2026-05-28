@@ -1,7 +1,7 @@
 <div class="flex min-h-screen pt-12 pb-6 bg-background text-on-surface">
-    <app-sidebar></app-sidebar>
     <main class="flex-1 overflow-x-hidden">
         <div class="p-margin-md lg:p-margin-lg space-y-margin-lg">
+            <div class="bg-surface-container border-l-4 border-primary p-4 mb-margin-lg font-body-md"><span class="text-primary font-bold"><span class="material-symbols-outlined align-middle mr-2">terminal</span>Bienvenido al Linux Club.</span><span class="text-on-surface opacity-80"> Somos una comunidad dedicada a la exploraci3n de sistemas operativos libres, el hacking 3tico y el desarrollo de bajo nivel. Siente la libertad del c3digo abierto.</span></div>
             <!-- 1. Hero / Terminal Section -->
             <section
                 class="terminal-window bg-surface-container rounded-t-lg overflow-hidden border border-outline-variant">
@@ -26,8 +26,8 @@
     | |____ _| |_| |\  | |_| / /\ \ | |____| |___| |_| | |_) |
     |______|_____|_| \_|\___/_/  \_\ \_____|______\___/|____/ 
                             </pre>
-                    <p class="text-headline-sm font-headline-sm mb-6 text-primary">"Building the future, one kernel at a
-                        time."</p>
+                    <p class="text-headline-sm font-headline-sm mb-6 text-primary">"Innovando hacia el futuro, un kernel a la
+                        vez."</p>
                     <div class="flex items-center gap-2">
                         <span class="text-secondary">user@linux_club:~$</span>
                         <span class="cursor-blink"></span>
@@ -53,7 +53,7 @@
                 </div>
                 <div
                     class="md:col-span-8 flex flex-col justify-center font-code-snippet border-l-0 md:border-l border-outline-variant md:pl-margin-lg">
-                    <h2 class="text-headline-md font-headline-md text-primary mb-4">user@linux_club</h2>
+                    <h2 class="text-headline-md font-headline-md text-primary mb-4">Informaci3n del Usuario</h2>
                     <div class="space-y-1">
                         <p><span class="text-tertiary">Kernel:</span> <span
                                 class="text-on-surface">Linux-Club-v1.0-stable</span></p>
@@ -83,83 +83,66 @@
                     <span class="text-primary">$</span>
                     <span>ls -R /distros</span>
                 </div>
-                <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-margin-md">
-                    <!-- Card 1: Arch -->
-                    <div
-                        class="border border-outline-variant bg-surface p-4 font-code-snippet group hover:border-primary transition-all">
+                <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-4">
+                    <a 
+                        routerLink="/docs/arch-linux"
+                        class="border border-outline-variant bg-surface p-4 font-code-snippet group hover:border-primary transition-all block cursor-pointer select-none">
                         <div class="flex justify-between items-start mb-4">
                             <span class="text-secondary-fixed">arch_linux.json</span>
-                            <span
-                                class="material-symbols-outlined text-on-surface-variant opacity-40 group-hover:opacity-100">terminal</span>
+                            <span class="material-symbols-outlined text-on-surface-variant opacity-40 group-hover:opacity-100 transition-opacity">terminal</span>
                         </div>
                         <div class="space-y-1 text-sm">
-                            <p><span class="text-secondary">"name":</span> <span class="text-primary-container">"Arch
-                                    Linux"</span>,</p>
-                            <p><span class="text-secondary">"kernel_v":</span> <span
-                                    class="text-primary-container">"6.5.8-arch1-1"</span>,</p>
-                            <p><span class="text-secondary">"philosophy":</span> <span
-                                    class="text-primary-container">"KISS"</span>,</p>
-                            <p><span class="text-secondary">"reason":</span> <span class="text-primary-container">"Bleeding
-                                    edge packages"</span></p>
+                            <p><span class="text-secondary">"name":</span> <span class="text-primary-container">"Arch Linux"</span>,</p>
+                            <p><span class="text-secondary">"kernel_v":</span> <span class="text-primary-container">"6.5.8-arch1-1"</span>,</p>
+                            <p><span class="text-secondary">"philosophy":</span> <span class="text-primary-container">"KISS"</span>,</p>
+                            <p><span class="text-secondary">"reason":</span> <span class="text-primary-container">"Bleeding edge packages"</span></p>
                         </div>
-                    </div>
-                    <!-- Card 2: Debian -->
-                    <div
-                        class="border border-outline-variant bg-surface p-4 font-code-snippet group hover:border-primary transition-all">
+                    </a>
+
+                    <a 
+                        routerLink="/docs/debian"
+                        class="border border-outline-variant bg-surface p-4 font-code-snippet group hover:border-primary transition-all block cursor-pointer select-none">
                         <div class="flex justify-between items-start mb-4">
                             <span class="text-secondary-fixed">debian_stable.yaml</span>
-                            <span
-                                class="material-symbols-outlined text-on-surface-variant opacity-40 group-hover:opacity-100">terminal</span>
+                            <span class="material-symbols-outlined text-on-surface-variant opacity-40 group-hover:opacity-100 transition-opacity">terminal</span>
                         </div>
                         <div class="space-y-1 text-sm">
-                            <p><span class="text-secondary">name:</span> <span class="text-primary-container">Debian</span>
-                            </p>
-                            <p><span class="text-secondary">kernel_v:</span> <span
-                                    class="text-primary-container">6.1.0-13-amd64</span></p>
-                            <p><span class="text-secondary">branch:</span> <span
-                                    class="text-primary-container">bookworm</span></p>
-                            <p><span class="text-secondary">reason:</span> <span class="text-primary-container">Rock solid
-                                    stability</span></p>
+                            <p><span class="text-secondary">name:</span> <span class="text-primary-container">Debian</span></p>
+                            <p><span class="text-secondary">kernel_v:</span> <span class="text-primary-container">6.1.0-13-amd64</span></p>
+                            <p><span class="text-secondary">branch:</span> <span class="text-primary-container">bookworm</span></p>
+                            <p><span class="text-secondary">reason:</span> <span class="text-primary-container">Rock solid stability</span></p>
                         </div>
-                    </div>
-                    <!-- Card 3: Fedora -->
-                    <div
-                        class="border border-outline-variant bg-surface p-4 font-code-snippet group hover:border-primary transition-all">
+                    </a>
+
+                    <a 
+                        routerLink="/docs/fedora"
+                        class="border border-outline-variant bg-surface p-4 font-code-snippet group hover:border-primary transition-all block cursor-pointer select-none">
                         <div class="flex justify-between items-start mb-4">
                             <span class="text-secondary-fixed">fedora_workstation.json</span>
-                            <span
-                                class="material-symbols-outlined text-on-surface-variant opacity-40 group-hover:opacity-100">terminal</span>
+                            <span class="material-symbols-outlined text-on-surface-variant opacity-40 group-hover:opacity-100 transition-opacity">terminal</span>
                         </div>
                         <div class="space-y-1 text-sm">
-                            <p><span class="text-secondary">"name":</span> <span
-                                    class="text-primary-container">"Fedora"</span>,</p>
-                            <p><span class="text-secondary">"kernel_v":</span> <span
-                                    class="text-primary-container">"6.5.6-300.fc39"</span>,</p>
-                            <p><span class="text-secondary">"init":</span> <span
-                                    class="text-primary-container">"systemd"</span>,</p>
-                            <p><span class="text-secondary">"reason":</span> <span class="text-primary-container">Innovating
-                                    upstream"</span></p>
+                            <p><span class="text-secondary">"name":</span> <span class="text-primary-container">"Fedora"</span>,</p>
+                            <p><span class="text-secondary">"kernel_v":</span> <span class="text-primary-container">"6.5.6-300.fc39"</span>,</p>
+                            <p><span class="text-secondary">"init":</span> <span class="text-primary-container">"systemd"</span>,</p>
+                            <p><span class="text-secondary">"reason":</span> <span class="text-primary-container">"Innovating upstream"</span></p>
                         </div>
-                    </div>
-                    <!-- Card 4: NixOS -->
-                    <div
-                        class="border border-outline-variant bg-surface p-4 font-code-snippet group hover:border-primary transition-all">
+                    </a>
+
+                    <a 
+                        routerLink="/docs/ubuntu"
+                        class="border border-outline-variant bg-surface p-4 font-code-snippet group hover:border-primary transition-all block cursor-pointer select-none">
                         <div class="flex justify-between items-start mb-4">
-                            <span class="text-secondary-fixed">nixos_config.nix</span>
-                            <span
-                                class="material-symbols-outlined text-on-surface-variant opacity-40 group-hover:opacity-100">terminal</span>
+                            <span class="text-secondary-fixed">ubuntu_lts.yaml</span>
+                            <span class="material-symbols-outlined text-on-surface-variant opacity-40 group-hover:opacity-100 transition-opacity">terminal</span>
                         </div>
                         <div class="space-y-1 text-sm">
-                            <p><span class="text-secondary">name =</span> <span
-                                    class="text-primary-container">"NixOS"</span>;</p>
-                            <p><span class="text-secondary">reproducible =</span> <span
-                                    class="text-primary-container">true</span>;</p>
-                            <p><span class="text-secondary">package_manager =</span> <span
-                                    class="text-primary-container">"nix"</span>;</p>
-                            <p><span class="text-secondary">reason =</span> <span
-                                    class="text-primary-container">"Declarative configs"</span>;</p>
+                            <p><span class="text-secondary">name:</span> <span class="text-primary-container">Ubuntu LTS</span></p>
+                            <p><span class="text-secondary">kernel_v:</span> <span class="text-primary-container">6.5.0-27-generic</span></p>
+                            <p><span class="text-secondary">package_manager:</span> <span class="text-primary-container">apt / snap</span></p>
+                            <p><span class="text-secondary">reason:</span> <span class="text-primary-container">Enterprise & production standard</span></p>
                         </div>
-                    </div>
+                    </a>
                 </div>
             </section>
             <!-- 4. System Logs Section -->

@@ -13,34 +13,64 @@
     </div>
     <nav class="flex-1 py-4 font-code-snippet">
         <div class="px-2 space-y-1">
-            <a class="flex items-center gap-3 px-3 py-2 text-primary bg-surface-variant cursor-pointer group">
+            <a 
+                routerLink="/"
+                routerLinkActive="text-primary bg-surface-variant border-r-4 border-text-primary"
+                [routerLinkActiveOptions]="{ exact: true }"
+                class="flex items-center gap-3 px-3 py-2 text-on-surface-variant hover:text-secondary hover:bg-surface-variant cursor-pointer transition-colors duration-75 group"
+            >
                 <span class="material-symbols-outlined text-[18px]">home</span>
                 <span>~/home</span>
             </a>
+
             <a
-                class="flex items-center gap-3 px-3 py-2 text-on-surface-variant hover:text-secondary hover:bg-surface-variant cursor-pointer transition-colors duration-75 group">
+                routerLink="/projects"
+                routerLinkActive="text-primary bg-surface-variant border-r-4 border-text-primary"
+                class="flex items-center gap-3 px-3 py-2 text-on-surface-variant hover:text-secondary hover:bg-surface-variant cursor-pointer transition-colors duration-75 group"
+            >
                 <span class="material-symbols-outlined text-[18px]">folder_open</span>
                 <span>~/projects</span>
             </a>
+
             <a
-                class="flex items-center gap-3 px-3 py-2 text-on-surface-variant hover:text-secondary hover:bg-surface-variant cursor-pointer transition-colors duration-75 group">
-                <span class="material-symbols-outlined text-[18px]">groups</span>
-                <span>~/members</span>
+                routerLink="/docs"
+                routerLinkActive="text-primary bg-surface-variant border-r-4 border-text-primary"
+                class="flex items-center gap-3 px-3 py-2 text-on-surface-variant hover:text-secondary hover:bg-surface-variant cursor-pointer transition-colors duration-75 group"
+            >
+                <span class="material-symbols-outlined text-[18px]">docs</span>
+                <span>~/docs</span>
             </a>
+
             <a
-                class="flex items-center gap-3 px-3 py-2 text-on-surface-variant hover:text-secondary hover:bg-surface-variant cursor-pointer transition-colors duration-75 group">
+                routerLink="/about"
+                routerLinkActive="text-primary bg-surface-variant border-r-4 border-text-primary"
+                class="flex items-center gap-3 px-3 py-2 text-on-surface-variant hover:text-secondary hover:bg-surface-variant cursor-pointer transition-colors duration-75 group"
+            >
+                <span class="material-symbols-outlined text-[18px]">groups</span>
+                <span>~/community</span>
+            </a>
+
+            <a
+                routerLink="/logs"
+                routerLinkActive="text-primary bg-surface-variant border-r-4 border-text-primary"
+                class="flex items-center gap-3 px-3 py-2 text-on-surface-variant hover:text-secondary hover:bg-surface-variant cursor-pointer transition-colors duration-75 group"
+            >
                 <span class="material-symbols-outlined text-[18px]">terminal</span>
                 <span>~/logs</span>
             </a>
+
             <a
-                class="flex items-center gap-3 px-3 py-2 text-on-surface-variant hover:text-secondary hover:bg-surface-variant cursor-pointer transition-colors duration-75 group">
+                routerLink="/config"
+                routerLinkActive="text-primary bg-surface-variant border-r-4 border-text-primary"
+                class="flex items-center gap-3 px-3 py-2 text-on-surface-variant hover:text-secondary hover:bg-surface-variant cursor-pointer transition-colors duration-75 group"
+            >
                 <span class="material-symbols-outlined text-[18px]">settings</span>
                 <span>~/config</span>
             </a>
         </div>
         <div class="mt-8 px-margin-md">
             <button
-                class="w-full border border-secondary text-secondary py-2 hover:bg-secondary hover:text-on-secondary transition-colors duration-75">
+                class="w-full border border-secondary text-secondary py-2 hover:bg-secondary hover:text-on-secondary transition-colors duration-75 cursor-pointer">
                 $ SSH_CONNECT
             </button>
         </div>

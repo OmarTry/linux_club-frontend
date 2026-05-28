@@ -1,0 +1,124 @@
+<main class="flex-1 overflow-y-auto pt-12 pl-2 bg-surface-container-lowest p-margin-md relative">
+    <div class="terminal-window h-full flex flex-col">
+        <!-- Window Decoration -->
+        <div
+            class="bg-surface-container-high border-b border-outline-variant px-margin-sm py-unit flex justify-between items-center">
+            <div class="flex gap-2">
+                <div class="w-3 h-3 rounded-full bg-[#ff5555]"></div>
+                <div class="w-3 h-3 rounded-full bg-[#f1fa8c]"></div>
+                <div class="w-3 h-3 rounded-full bg-primary-container"></div>
+            </div>
+            <div class="font-code-snippet text-code-snippet text-on-surface-variant">
+                /usr/share/doc/debian_stable.man
+            </div>
+            <div class="text-[10px] text-on-surface-variant opacity-60">UTF-8 [ES-ES]</div>
+        </div>
+        <div class="flex-1 flex overflow-hidden">
+            <!-- Line Numbers -->
+            <div class="line-numbers font-code-snippet text-code-snippet bg-surface-container-low py-4 px-2 w-8 flex-none">
+                1<br />2<br />3<br />4<br />5<br />6<br />7<br />8<br />9<br />10<br />11<br />12<br />13<br />14<br />15<br />16<br />17<br />18<br />19<br />20<br />21<br />22<br />23<br />24<br />25<br />26<br />27<br />28<br />29<br />30<br />31<br />32<br />33<br />34<br />35<br />36<br />37<br />38<br />39<br />40<br />41<br />42<br />43<br />44<br />45<br />46<br />47
+            </div>
+            <!-- Content -->
+            <div class="flex-1 overflow-y-auto p-window-padding font-code-snippet text-code-snippet leading-relaxed">
+                <section class="mb-8">
+                    <h1 class="text-primary-container font-headline-md text-headline-md mb-2 flex items-center gap-2">
+                        <span class="material-symbols-outlined">terminal</span> DEBIAN STABLE (7)
+                    </h1>
+                    <p class="text-on-surface border-l-2 border-primary-container pl-4 ml-2">
+                        "EL SISTEMA OPERATIVO UNIVERSAL"
+                        <br /><br />
+                        Debian Stable es la culminación de un proceso de desarrollo riguroso enfocado exclusivamente en
+                        la
+                        <span class="text-primary-container">estabilidad y confiabilidad</span>. Diseñado para ser el
+                        pilar
+                        fundamental de servidores, estaciones de trabajo críticas y sistemas donde el "tiempo de
+                        actividad"
+                        no es negociable.
+                    </p>
+                </section>
+                <section class="mb-8">
+                    <h2 class="text-secondary font-headline-sm text-headline-sm mb-4 uppercase">¿POR QUÉ DEBIAN STABLE?
+                    </h2>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-gutter bg-outline-variant p-[1px]">
+                        <div class="bg-surface p-margin-md">
+                            <div class="text-primary-container mb-2">[ ROBUSTEZ ]</div>
+                            Paquetes probados exhaustivamente para eliminar regresiones y fallos de seguridad.
+                        </div>
+                        <div class="bg-surface p-margin-md">
+                            <div class="text-primary-container mb-2">[ REPOSITORIOS ]</div>
+                            Acceso a más de 59,000 paquetes de software compilados y listos para usar.
+                        </div>
+                        <div class="bg-surface p-margin-md">
+                            <div class="text-primary-container mb-2">[ SEGURIDAD ]</div>
+                            Equipo dedicado que proporciona parches críticos con una velocidad inigualable.
+                        </div>
+                    </div>
+                </section>
+                <section class="mb-8">
+                    <h2 class="text-secondary font-headline-sm text-headline-sm mb-4 uppercase">GUÍA DE INSTALACIÓN
+                        RECOMENDADA</h2>
+                    <div class="space-y-4">
+                        <div class="flex gap-4">
+                            <span class="text-primary-container font-bold">01.</span>
+                            <div>
+                                <span class="text-on-surface font-bold underline">Descarga de la imagen netinst:</span>
+                                <p class="text-on-surface-variant mt-1">Recomendamos la imagen de instalación por red
+                                    (mínima y eficiente). Permite descargar solo lo necesario durante el proceso.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <span class="text-primary-container font-bold">02.</span>
+                            <div>
+                                <span class="text-on-surface font-bold underline">Verificación de checksums:</span>
+                                <code
+                                    class="block bg-surface-container-high p-2 mt-2 border border-outline-variant">sha256sum debian-12.x.x-amd64-netinst.iso</code>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <span class="text-primary-container font-bold">03.</span>
+                            <div>
+                                <span class="text-on-surface font-bold underline">Configuración de repositorios:</span>
+                                <p class="text-on-surface-variant mt-1">Habilita 'main', 'contrib' y 'non-free-firmware'
+                                    en /etc/apt/sources.list para soporte completo de hardware.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <span class="text-primary-container font-bold">04.</span>
+                            <div>
+                                <span class="text-on-surface font-bold underline">Uso de tasksel:</span>
+                                <p class="text-on-surface-variant mt-1">Durante la instalación, usa tasksel para elegir
+                                    rápidamente tu entorno (GNOME, KDE, XFCE o Servidor SSH).</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="mb-8 border border-primary-container p-margin-md bg-surface-container-high">
+                    <h2 class="text-primary-container font-headline-sm text-headline-sm mb-2 uppercase">NUESTRA
+                        RECOMENDACIÓN</h2>
+                    <p class="mb-4">Para una configuración limpia y optimizada por el Linux Club, ejecuta el siguiente
+                        comando como superusuario:</p>
+                    <div class="group relative cursor-pointer">
+                        <div
+                            class="flex items-center gap-2 text-primary-container font-bold text-body-lg bg-surface p-4 border border-outline hover:border-primary-container transition-all">
+                            <span>$</span>
+                            <span>curl -sSL https://linux-club.org/install-debian.sh | sudo bash</span>
+                            <span class="w-2 h-5 bg-primary-container cursor-blink"></span>
+                        </div>
+                    </div>
+                    <p class="text-[10px] mt-2 opacity-60">* Se requiere conexión a internet y privilegios de sudo.</p>
+                </section>
+                <section class="mb-12">
+                    <h2 class="text-secondary font-headline-sm text-headline-sm mb-4 uppercase">FILOSOFÍA</h2>
+                    <div class="bg-surface-container-low p-margin-md border-l-4 border-secondary italic">
+                        Debian se rige por el <span class="text-secondary">Contrato Social de Debian</span> y las
+                        <span class="text-secondary">Directrices de Software Libre de Debian (DFSG)</span>. Nuestra
+                        prioridad es el bienestar de los usuarios y la libertad del software por encima de todo.
+                    </div>
+                </section>
+                <div class="text-center opacity-30 mt-10 mb-4 font-bold">
+                    --- FIN DEL DOCUMENTO ---
+                </div>
+            </div>
+        </div>
+    </div>
+</main>

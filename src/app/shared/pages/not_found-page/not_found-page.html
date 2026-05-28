@@ -1,1 +1,233 @@
-<p>not_found-page works!</p>,
+<header
+    class="bg-surface text-primary-fixed border-b border-outline-variant flex justify-between items-center w-full px-margin-md h-12 fixed top-0 z-50">
+    <div class="font-headline-sm text-headline-sm font-bold text-primary-fixed uppercase tracking-tighter">
+        LINUX_CLUB_OS_v1.0.4
+    </div>
+    <nav class="hidden md:flex gap-6 h-full">
+        <a class="text-on-surface-variant hover:bg-surface-variant hover:text-primary-fixed transition-colors duration-75 ease-in-out px-2 flex items-center font-label-md text-label-md uppercase"
+            routerLink="/">~/</a>
+        <a class="text-on-surface-variant hover:bg-surface-variant hover:text-primary-fixed transition-colors duration-75 ease-in-out px-2 flex items-center font-label-md text-label-md uppercase"
+            routerLink="/logs">BUGS</a>
+        <a class="text-on-surface-variant hover:bg-surface-variant hover:text-primary-fixed transition-colors duration-75 ease-in-out px-2 flex items-center font-label-md text-label-md uppercase"
+            href="https://github.com/OmarTry/linux_club-frontend">GITHUB</a>
+    </nav>
+    <div class="flex items-center gap-4">
+        <span class="material-symbols-outlined cursor-pointer hover:text-primary-fixed-dim">terminal</span>
+        <span class="material-symbols-outlined cursor-pointer hover:text-primary-fixed-dim">settings</span>
+        <span class="material-symbols-outlined cursor-pointer hover:text-primary-fixed-dim">power_settings_new</span>
+    </div>
+</header>
+
+<!-- SideNavBar -->
+<aside
+    class="fixed left-0 top-12 bottom-8 w-64 z-40 flex-col bg-surface-container-lowest border-r border-outline-variant hidden md:flex">
+    <div class="p-4 border-b border-outline-variant mb-4">
+        <div class="font-headline-sm text-headline-sm text-primary-fixed">SYS_ADMIN</div>
+        <div class="font-label-md text-label-md text-on-surface-variant">127.0.0.1</div>
+    </div>
+    <nav class="grow">
+        <a class="text-on-surface-variant px-4 py-3 flex items-center gap-2 hover:bg-surface-container-high hover:text-primary-fixed cursor-pointer transition-colors"
+            routerLink="/">
+            <span class="material-symbols-outlined">folder_special</span>
+            <span class="font-label-lg text-label-lg">ROOT/HOME</span>
+        </a>
+
+        <a class="text-on-surface-variant px-4 py-3 flex items-center gap-2 hover:bg-surface-container-high hover:text-primary-fixed cursor-pointer transition-colors"
+            routerLink="/projects">
+            <span class="material-symbols-outlined">folder_open</span>
+            <span class="font-label-lg text-label-lg">PROJECTS</span>
+        </a>
+
+        <a class="text-on-surface-variant px-4 py-3 flex items-center gap-2 hover:bg-surface-container-high hover:text-primary-fixed cursor-pointer transition-colors"
+            routerLink="/docs">
+            <span class="material-symbols-outlined">docs</span>
+            <span class="font-label-lg text-label-lg">DOCS</span>
+        </a>
+
+        <a class="text-on-surface-variant px-4 py-3 flex items-center gap-2 hover:bg-surface-container-high hover:text-primary-fixed cursor-pointer transition-colors"
+            routerLink="/logs">
+            <span class="material-symbols-outlined">terminal</span>
+            <span class="font-label-lg text-label-lg">LOGS</span>
+        </a>
+    </nav>
+    <div class="p-4 mt-auto">
+        <button
+            class="w-full border border-primary-fixed text-primary-fixed py-2 font-label-md text-label-md hover:bg-primary-fixed hover:text-surface transition-all active:translate-y-1">
+            &gt; EXECUTE_RECOVERY
+        </button>
+    </div>
+    <div class="border-t border-outline-variant">
+        <div
+            class="text-on-surface-variant px-4 py-3 flex items-center gap-2 hover:bg-surface-container-high hover:text-primary-fixed cursor-pointer">
+            <span class="material-symbols-outlined">logout</span>
+            <span class="font-label-lg text-label-lg">LOGOUT</span>
+        </div>
+    </div>
+</aside>
+
+<!-- Main Canvas - Expanded for Full Height Immersive Mode -->
+<main class="fixed inset-0 md:ml-64 mt-12 mb-8 bg-background flex flex-col">
+    <!-- Kernel Panic Frame - Immersive Full Height -->
+    <div class="grow border border-outline-variant bg-background shadow-none flex flex-col">
+        <!-- Window Header -->
+        <div
+            class="flex items-center justify-between bg-surface-variant px-3 py-1 border-b border-outline-variant shrink-0">
+            <div class="flex items-center gap-2">
+                <div class="w-2.5 h-2.5 rounded-full bg-error"></div>
+                <div class="w-2.5 h-2.5 rounded-full bg-tertiary"></div>
+                <div class="w-2.5 h-2.5 rounded-full bg-primary-container"></div>
+                <span class="font-label-md text-label-md text-on-surface-variant ml-2 uppercase">tty1 -
+                    KERNEL_PANIC_RUNTIME_ERROR.sys</span>
+            </div>
+            <div class="text-error font-label-md text-[10px] animate-pulse">SYSTEM_HALTED</div>
+        </div>
+        <!-- Terminal Content - Scrollable and Scaled -->
+        <div class="grow p-6 md:p-12 overflow-y-auto space-y-10 custom-scrollbar">
+            <!-- Large ASCII Hazard -->
+            <div class="flex flex-col md:flex-row items-center gap-8 border-b border-outline-variant pb-8">
+                <pre
+                    class="text-primary-fixed font-code-snippet leading-none opacity-80 whitespace-pre text-center md:text-left text-xs md:text-base">        _      _      _
+     __(.)____(.)____(.)__
+    (______________________)
+     |  |  |  |  |  |  |  |
+     | [!] CRITICAL [!]   |
+     |____________________|
+                </pre>
+                <div class="space-y-2">
+                    <h1
+                        class="font-headline-lg text-headline-lg md:text-[40px] text-error tracking-tight glitch-text uppercase">
+                        ERROR 404: SEGMENTATION FAULT
+                    </h1>
+                    <p class="font-body-lg text-body-lg text-on-surface max-w-3xl border-l-4 border-error pl-4">
+                        Kernel panic: Attempted to kill init! El recurso solicitado no fue encontrado. El sistema ha
+                        detenido el proceso para evitar corrupción masiva de datos en <code
+                            class="text-primary-fixed">/dev/sda1</code>.
+                    </p>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 xl:grid-cols-2 gap-8">
+                <!-- Memory Dump Section - Scaled -->
+                <div class="space-y-4">
+                    <h2 class="font-headline-sm text-headline-sm text-secondary-fixed flex items-center gap-2">
+                        <span class="material-symbols-outlined">analytics</span>
+                        CORE_DUMP_STREAM
+                    </h2>
+                    <div
+                        class="border border-outline-variant p-4 bg-surface-container-low font-code-snippet text-code-snippet overflow-hidden">
+                        <div
+                            class="text-secondary mb-2 uppercase border-b border-outline-variant pb-1 flex justify-between">
+                            <span>Dump de memoria [0x0000000000000194]</span>
+                            <span class="text-error text-[10px]">CRC_ERR</span>
+                        </div>
+                        <div class="grid grid-cols-1 gap-4 text-on-surface-variant leading-relaxed">
+                            <div class="font-bold">
+                                <span class="text-error">RAX:</span> 0000000000000000 <span class="mx-2">|</span>
+                                <span class="text-error">RBX:</span> ffffffff81a01c80 <span class="mx-2">|</span>
+                                <span class="text-error">RCX:</span> 0000000000000001 <span class="mx-2">|</span>
+                                <span class="text-error">RDX:</span> 0000000000000000
+                            </div>
+                            <div class="opacity-80 grid grid-cols-1 gap-1">
+                                <div>0x0000: 48 89 e5 48 83 ec 10 48 8b 05 00 00 00 00 48 8d 3d</div>
+                                <div>0x0011: 00 00 00 00 e8 00 00 00 00 b8 00 00 00 00 c9 c3 90</div>
+                                <div>0x0022: 90 90 90 90 90 90 90 48 89 e5 48 83 ec 10 48 8b 05</div>
+                                <div>0x0033: 00 00 00 00 48 8d 3d 00 00 00 00 e8 00 00 00 00 b8</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Recovery Actions - Enhanced -->
+                <div class="space-y-4">
+                    <h2 class="font-headline-sm text-headline-sm text-primary-fixed flex items-center gap-2">
+                        <span class="material-symbols-outlined">build</span>
+                        SUGERENCIAS_DE_RECUPERACION
+                    </h2>
+                    <div class="grid grid-cols-1 gap-3">
+                        <div class="flex items-start gap-3 p-3 border border-transparent hover:border-outline-variant hover:bg-surface-container-high transition-all group cursor-pointer"
+                            onclick="window.location.reload()">
+                            <span
+                                class="bg-primary-fixed text-on-primary-fixed px-1.5 py-0.5 font-bold text-xs">01</span>
+                            <div>
+                                <div
+                                    class="font-label-lg text-label-lg text-on-surface group-hover:text-primary-fixed transition-colors">
+                                    Ejecutar comando <code
+                                        class="bg-surface-variant px-1 text-primary-fixed">cd ~/</code></div>
+                                <div class="font-body-sm text-body-sm text-on-surface-variant">Retornar al directorio
+                                    raíz.</div>
+                            </div>
+                        </div>
+                        <div
+                            class="flex items-start gap-3 p-3 border border-transparent hover:border-outline-variant hover:bg-surface-container-high transition-all group cursor-pointer">
+                            <span
+                                class="bg-primary-fixed text-on-primary-fixed px-1.5 py-0.5 font-bold text-xs">02</span>
+                            <div>
+                                <div
+                                    class="font-label-lg text-label-lg text-on-surface group-hover:text-primary-fixed transition-colors">
+                                    Consultar <code class="bg-surface-variant px-1 text-primary-fixed">logs</code>
+                                </div>
+                                <div class="font-body-sm text-body-sm text-on-surface-variant">Revisar
+                                    el estado del servidor y los posibles servicios deshabilitados.</div>
+                            </div>
+                        </div>
+                        <div
+                            class="flex items-start gap-3 p-3 border border-transparent hover:border-outline-variant hover:bg-surface-container-high transition-all group cursor-pointer">
+                            <span
+                                class="bg-primary-fixed text-on-primary-fixed px-1.5 py-0.5 font-bold text-xs">03</span>
+                            <div>
+                                <div
+                                    class="font-label-lg text-label-lg text-on-surface group-hover:text-primary-fixed transition-colors">
+                                    Reportar 'Kernel Bug'</div>
+                                <div class="font-body-sm text-body-sm text-on-surface-variant">Reportar errores
+                                    en el repositorio central de errores.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Full-width technical logs simulation -->
+            <div class="mt-8 opacity-40 font-code-snippet text-[11px] leading-tight space-y-1">
+                <div class="text-primary-fixed">[ 0.000000] Linux version 5.15.0-generic (gcc version 11.2.0)</div>
+                <div class="text-on-surface-variant">[ 0.000000] Command line: BOOT_IMAGE=/boot/vmlinuz-5.15
+                    root=UUID=... ro quiet splash</div>
+                <div class="text-on-surface-variant">[ 0.412083] pci 0000:00:00.0: [8086:9b44] rev 0c class 0x060000
+                </div>
+                <div class="text-error">[ 1.892744] Kernel panic - not syncing: VFS: Unable to mount root fs on
+                    unknown-block(0,0)</div>
+                <div class="text-error">[ 1.892790] CPU: 0 PID: 1 Comm: swapper/0 Not tainted 5.15.0-generic #25-Ubuntu
+                </div>
+                <div class="text-on-surface-variant">[ 1.892812] Call Trace:</div>
+                <div class="text-on-surface-variant">[ 1.892825] show_stack+0x52/0x58</div>
+                <div class="text-on-surface-variant">[ 1.892841] dump_stack_lvl+0x4a/0x63</div>
+                <div class="text-on-surface-variant">[ 1.892858] panic+0x149/0x321</div>
+            </div>
+        </div>
+        <!-- CLI Input Simulation - Fixed to bottom of main area -->
+        <div
+            class="p-4 bg-surface-container border-t border-outline-variant flex gap-2 font-code-snippet items-center shrink-0">
+            <span class="text-primary-fixed font-bold">root@linux_club:~$</span>
+            <span class="text-on-surface" id="cli-text"></span>
+            <div class="w-2.5 h-5 bg-primary-fixed cursor-blink"></div>
+        </div>
+    </div>
+</main>
+<footer class="fixed bottom-0 left-0 w-full z-50 flex justify-between items-center px-4 h-8 bg-primary-container text-on-primary-container border-t border-primary">
+<div class="flex gap-4">
+<div class="bg-on-primary-container text-primary-container px-2 flex items-center gap-1 font-label-md text-label-md">
+<span class="material-symbols-outlined text-[14px]">error</span>
+            STATUS:404_SEGFAULT
+        </div>
+<div class="text-on-primary-container px-2 flex items-center gap-1 font-label-md text-label-md hover:opacity-80 cursor-default">
+<span class="material-symbols-outlined text-[14px]">memory</span>
+            CPU:OVERLOAD
+        </div>
+</div>
+<div class="flex gap-4">
+<div class="text-on-primary-container px-2 flex items-center gap-1 font-label-md text-label-md hover:opacity-80 cursor-default">
+<span class="material-symbols-outlined text-[14px]">analytics</span>
+            MEM:PAG_FAULT
+        </div>
+<div class="text-on-primary-container px-2 flex items-center gap-1 font-label-md text-label-md hover:opacity-80 cursor-default">
+<span class="material-symbols-outlined text-[14px]">schedule</span>
+            UPTIME:0.0001s
+        </div>
+</div>
+</footer>

@@ -1,0 +1,140 @@
+<main class="max-w-6xl mx-auto p-margin-lg mb-20">
+    <!-- Header Section: Main Terminal Hero -->
+    <header class="mb-margin-lg">
+        <div class="terminal-window rounded-none overflow-hidden">
+            <div class="terminal-header px-4 py-2 flex justify-between items-center">
+                <span class="font-label-md text-label-md text-outline">bash — 80x24</span>
+                <div class="flex gap-2">
+                    <div class="w-3 h-3 rounded-full bg-red-500/50 border border-red-500"></div>
+                    <div class="w-3 h-3 rounded-full bg-yellow-500/50 border border-yellow-500"></div>
+                    <div class="w-3 h-3 rounded-full bg-green-500/50 border border-green-500"></div>
+                </div>
+            </div>
+            <div class="p-6 font-code-snippet text-code-snippet">
+                <div class="mb-2">
+                    <span class="text-primary-fixed-dim">user@system</span>:<span class="text-secondary">~</span>$ sudo
+                    join-club
+                </div>
+                <div class="text-on-surface-variant mb-4">
+                    [sudo] password for user: <span class="text-outline">********</span>
+                </div>
+                <div class="text-primary-fixed-dim mb-1">Iniciando protocolo de reclutamiento v2.4.1...</div>
+                <div class="text-on-surface-variant">Analizando compatibilidad de hardware... OK</div>
+                <div class="text-on-surface-variant">Verificando dependencias de conocimiento... OK</div>
+                <div class="mt-4"><span class="text-primary-fixed-dim font-bold">Bienvenido al Linux Club.</span>
+                    Con3ctate a nuestros servicios para comenzar la colaboraci3n.</div>
+            </div>
+        </div>
+    </header>
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+        <!-- Section 1: Form / Environment Variables -->
+        <section class="md:col-span-8 terminal-window p-margin-md">
+            <div class="flex items-center gap-2 mb-margin-md border-b border-outline-variant pb-2"><span
+                    class="material-symbols-outlined text-primary-fixed-dim">hub</span>
+                <h2 class="font-headline-sm text-headline-sm uppercase">Recursos de la Comunidad</h2>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-margin-md mt-margin-lg"><!-- Documentation Card -->
+                <div
+                    class="group border border-outline-variant hover:border-tertiary transition-colors cursor-pointer p-4 bg-surface-container-lowest">
+                    <div class="flex justify-between items-start mb-2"><span
+                            class="material-symbols-outlined text-tertiary">description</span><span
+                            class="font-code-snippet text-xs text-outline">v2.0_STABLE</span></div>
+                    <p class="font-label-lg text-label-lg text-tertiary mb-1">Wiki de Documentaci3n</p>
+                    <p class="font-body-sm text-body-sm text-on-surface-variant">Gu3as, tutoriales y manuales operativos
+                        del club.</p>
+                    <div class="mt-4 flex items-center text-tertiary font-code-snippet text-sm"><span
+                            class="mr-2">&gt;</span> cat docs/manifest.md</div>
+                </div><!-- Active Projects Card -->
+                <div
+                    class="group border border-outline-variant hover:border-primary-fixed-dim transition-colors cursor-pointer p-4 bg-surface-container-lowest">
+                    <div class="flex justify-between items-start mb-2"><span
+                            class="material-symbols-outlined text-primary-fixed-dim">terminal</span><span
+                            class="font-code-snippet text-xs text-outline">UPDATING...</span></div>
+                    <p class="font-label-lg text-label-lg text-primary-fixed-dim mb-1">Proyectos Activos</p>
+                    <p class="font-body-sm text-body-sm text-on-surface-variant">Explora las iniciativas de hardware y
+                        software actuales.</p>
+                    <div class="mt-4 flex items-center text-primary-fixed-dim font-code-snippet text-sm"><span
+                            class="mr-2">&gt;</span> ls -la /home/projects/</div>
+                </div>
+            </div>
+            <div class="bg-surface-container p-4 border-l-4 border-secondary mt-margin-lg">
+                <p class="font-body-sm text-body-sm text-on-surface-variant italic">Nuestra filosof3a se basa en la
+                    colaboraci3n abierta. Selecciona un nodo de comunicaci3n para establecer el enlace.</p>
+            </div>
+        </section>
+        <!-- Section 2: Sync Links / Sidebar -->
+        <aside class="md:col-span-4 flex flex-col gap-gutter">
+            <div class="terminal-window p-margin-md flex-1">
+                <div class="flex items-center gap-2 mb-margin-md border-b border-outline-variant pb-2">
+                    <span class="material-symbols-outlined text-secondary">sync_alt</span>
+                    <h2 class="font-headline-sm text-headline-sm uppercase">COMUNICACIONES</h2>
+                </div>
+                <div class="space-y-margin-md">
+                    <!-- Discord Block -->
+                    <div
+                        class="group border border-outline-variant hover:border-secondary transition-colors cursor-pointer p-4 bg-surface-container-lowest">
+                        <div class="flex justify-between items-start mb-2">
+                            <span class="material-symbols-outlined text-secondary"
+                                style="font-variation-settings: 'FILL' 1;">forum</span>
+                            <span class="font-code-snippet text-xs text-outline">STATUS: OFFLINE</span>
+                        </div>
+                        <p class="font-label-lg text-label-lg text-secondary mb-1">Discord</p>
+                        <p class="font-body-sm text-body-sm text-on-surface-variant">Conectar al Servidor de
+                            Comunicaciones (Discord)</p>
+                        <div class="mt-4 flex items-center text-secondary font-code-snippet text-sm">
+                            <span class="mr-2">&gt;</span> ./connect_discord.sh
+                        </div>
+                    </div>
+                    <!-- GitHub Block -->
+                    <div
+                        class="group border border-outline-variant hover:border-primary-fixed-dim transition-colors cursor-pointer p-4 bg-surface-container-lowest">
+                        <div class="flex justify-between items-start mb-2">
+                            <span class="material-symbols-outlined text-primary-fixed-dim">account_tree</span>
+                            <span class="font-code-snippet text-xs text-outline">STATUS: SYNC_READY</span>
+                        </div>
+                        <p class="font-label-lg text-label-lg text-primary-fixed-dim mb-1">GitHub</p>
+                        <p class="font-body-sm text-body-sm text-on-surface-variant">Vincular Repositorio de
+                            Contribución</p>
+                        <div class="mt-4 flex items-center text-primary-fixed-dim font-code-snippet text-sm">
+                            <span class="mr-2">&gt;</span> git remote add origin
+                        </div>
+                    </div>
+                </div>
+                <!-- decorative "status" panel -->
+                <div class="mt-margin-lg border-t border-outline-variant pt-margin-md">
+                    <div class="flex flex-col gap-2 opacity-60">
+                        <div class="flex justify-between font-code-snippet text-xs">
+                            <span>MEM_USAGE:</span>
+                            <span>[||||||||__] 72%</span>
+                        </div>
+                        <div class="flex justify-between font-code-snippet text-xs">
+                            <span>CPU_LOAD:</span>
+                            <span>0.42 0.51 0.39</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </aside>
+    </div>
+    <!-- CTA Action -->
+    <div class="mt-margin-lg flex justify-center">
+        <button
+            class="group w-full md:w-auto px-margin-lg py-6 border-2 border-primary-fixed-dim hover:bg-primary-fixed-dim transition-all duration-300 relative overflow-hidden">
+            <span
+                class="relative z-10 font-headline-md text-headline-md text-primary-fixed-dim group-hover:text-on-primary-fixed flex items-center gap-4">
+                <span>$ sudo systemctl start explore-ecosystem</span>
+                <span class="cursor"></span>
+            </span>
+            <!-- Background glitch effect div -->
+            <div class="absolute inset-0 bg-primary-fixed-dim opacity-0 group-hover:opacity-10 transition-opacity">
+            </div>
+        </button>
+    </div>
+    <!-- Mini Documentation / FAQ Terminal -->
+    <div class="mt-margin-lg terminal-window p-margin-md opacity-80">
+        <h3 class="font-label-md text-label-md text-outline-variant mb-2">man community-hub(7)</h3>
+        <div class="font-body-sm text-body-sm text-outline">NAME: community-hub - Punto central de acceso para la
+            infraestructura del club.<br />DESCRIPTION: Este m3dulo proporciona enlaces directos a nuestras plataformas
+            de desarrollo (GitHub) y comunicaci3n (Discord), junto con acceso a la documentaci3n oficial.</div>
+    </div>
+</main>

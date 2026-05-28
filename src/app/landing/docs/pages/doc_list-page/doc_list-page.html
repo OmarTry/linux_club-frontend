@@ -1,1 +1,339 @@
-<p>doc_list-page works!</p>,
+<!-- Main Content Area (Vim-style Canvas) -->
+<main class="flex-1 flex flex-col pt-12 pb-6 bg-background relative overflow-hidden">
+    <!-- Terminal Header / Man Page Title -->
+    <div class="bg-surface-container-high px-4 py-1 flex justify-between items-center border-b border-outline-variant">
+        <div class="flex items-center gap-2">
+            <div class="flex gap-1.5">
+                <div class="w-2.5 h-2.5 rounded-full bg-[#ff5555]"></div>
+                <div class="w-2.5 h-2.5 rounded-full bg-[#f1fa8c]"></div>
+                <div class="w-2.5 h-2.5 rounded-full bg-primary-container"></div>
+            </div>
+            <span class="ml-4 text-label-md font-label-md text-on-surface-variant">man_pages: linux_club_docs(1)</span>
+        </div>
+        <span class="text-label-md font-label-md text-primary-fixed-dim">man linux_club_docs --version 1.0.4</span>
+    </div>
+    <!-- Editor View -->
+    <div class="flex-1 flex overflow-hidden">
+        <!-- Line Numbers -->
+        <div class="line-numbers font-code-snippet text-code-snippet py-margin-md w-12 hidden sm:block ml-2">
+            1<br />2<br />3<br />4<br />5<br />6<br />7<br />8<br />9<br />10<br />11<br />12<br />13<br />14<br />15<br />16<br />17<br />18<br />19<br />20<br />21<br />22<br />23<br />24<br />25<br />26<br />27<br />28<br />29<br />30<br />31<br />32<br />33<br />34<br />35<br />36<br />37<br />38<br />39<br />40<br />41<br />42<br />43<br />44<br />45
+        </div>
+        <!-- Scrollable Document Canvas -->
+        <div class="flex-1 overflow-y-auto p-margin-md font-code-snippet text-on-surface custom-scrollbar">
+            <!-- Section: Header -->
+            <div class="mb-margin-lg">
+                <h1 class="font-headline-lg text-headline-lg text-primary-fixed-dim mb-2">Linux Club -
+                    /usr/share/doc/man_pages</h1>
+                <p class="text-body-md text-secondary-fixed-dim max-w-2xl mb-4">
+                    Bienvenido al manual oficial del club. Este documento actúa como el punto de entrada para nuevos
+                    usuarios y entusiastas del software libre. Navegue usando el scroll o el teclado. Al final podrás ver
+                    documentación acerca de algunas distribuciones con guía práctica.
+                </p>
+                <div class="flex gap-2">
+                    <span
+                        class="bg-surface-container-highest px-2 py-0.5 text-label-md border border-outline-variant">--status-stable</span>
+                    <span
+                        class="bg-surface-container-highest px-2 py-0.5 text-label-md border border-outline-variant">--encoding-utf8</span>
+                    <span
+                        class="bg-surface-container-highest px-2 py-0.5 text-label-md border border-outline-variant">--access-public</span>
+                </div>
+            </div>
+            <!-- Section: Guía de Inicio Rápido -->
+            <section class="mb-margin-lg border border-outline-variant p-margin-md bg-surface-container-lowest/30">
+                <h2 class="font-headline-sm text-headline-sm text-primary-fixed mb-4 flex items-center">
+                    <span class="text-on-surface-variant mr-2">#</span> 1. GUÍA DE INICIO RÁPIDO
+                </h2>
+                <div class="space-y-4">
+                    <p class="text-body-md leading-relaxed">
+                        Para comenzar tu viaje en Linux, lo primero es familiarizarse con la línea de comandos. La
+                        terminal no es solo texto; es el control total del sistema.
+                    </p>
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-margin-md">
+                        <div class="bg-surface-container-high p-3 border-l-2 border-primary-fixed-dim">
+                            <p class="text-label-md text-on-surface-variant mb-2">// Actualizar repositorios</p>
+                            <code
+                                class="text-primary-fixed text-body-md">$ sudo apt update &amp;&amp; sudo apt upgrade</code>
+                        </div>
+                        <div class="bg-surface-container-high p-3 border-l-2 border-secondary-fixed-dim">
+                            <p class="text-label-md text-on-surface-variant mb-2">// Listar archivos con detalle</p>
+                            <code class="text-secondary-fixed-dim text-body-md">$ ls -la</code>
+                        </div>
+                        <div class="bg-surface-container-high p-3 border-l-2 border-tertiary-fixed-dim">
+                            <p class="text-label-md text-on-surface-variant mb-2">// Navegar al directorio home</p>
+                            <code class="text-tertiary-fixed-dim text-body-md">$ cd ~/home</code>
+                        </div>
+                        <div class="bg-surface-container-high p-3 border-l-2 border-error">
+                            <p class="text-label-md text-on-surface-variant mb-2">// Consultar ayuda de comandos</p>
+                            <code class="text-error text-body-md">$ man [comando]</code>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Section: Arquitectura del Sistema (Bento Style) -->
+            <section class="mb-margin-lg">
+                <h2 class="font-headline-sm text-headline-sm text-primary-fixed mb-4 flex items-center">
+                    <span class="text-on-surface-variant mr-2">#</span> 2. ARQUITECTURA DEL SISTEMA
+                </h2>
+                <div
+                    class="grid grid-cols-1 md:grid-cols-3 gap-gutter bg-outline-variant border border-outline-variant">
+                    <div class="bg-background p-margin-md">
+                        <h3 class="text-label-lg font-label-lg text-primary-fixed-dim mb-2">[ KERNEL ]</h3>
+                        <p class="text-body-sm text-on-surface-variant">El núcleo del sistema. Gestiona el hardware, la
+                            memoria y la comunicación entre procesos. Es la base de todo.</p>
+                    </div>
+                    <div class="bg-background p-margin-md">
+                        <h3 class="text-label-lg font-label-lg text-secondary-fixed-dim mb-2">[ SHELL ]</h3>
+                        <div class="space-y-1">
+                            <p class="text-body-sm text-on-surface-variant">Intérpretes de comandos:</p>
+                            <ul class="text-label-md text-primary-fixed">
+                                <li>&gt; bash (estándar)</li>
+                                <li>&gt; zsh (personalizable)</li>
+                                <li>&gt; fish (amigable)</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="bg-background p-margin-md">
+                        <h3 class="text-label-lg font-label-lg text-tertiary-fixed-dim mb-2">[ ENTORNO ]</h3>
+                        <p class="text-body-sm text-on-surface-variant">Interfaces gráficas (DE/WM): GNOME para
+                            productividad, KDE Plasma para personalización, e i3wm para tiling puro.</p>
+                    </div>
+                </div>
+            </section>
+            <!-- Section: Repositorios Oficiales -->
+            <section class="mb-8">
+                <h2 class="font-headline-sm text-headline-sm text-primary-fixed mb-4 flex items-center">
+                    <span class="text-on-surface-variant mr-2">#</span> 3. REPOSITORIOS OFICIALES
+                </h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-margin-md">
+                    <!-- Arch Linux Card -->
+                    <div class="border border-outline-variant p-4 hover:bg-surface-container-low group transition-all">
+                        <div class="flex justify-between items-start mb-4">
+                            <span class="text-secondary-fixed-dim font-bold">ARCH_LINUX</span>
+                            <span
+                                class="material-symbols-outlined text-on-surface-variant group-hover:text-primary-fixed">open_in_new</span>
+                        </div>
+                        <p class="text-body-sm text-on-surface-variant mb-4">"Keep it Simple, Stupid". La mejor wiki de
+                            la comunidad.</p>
+                        <a class="text-label-md text-primary-fixed underline decoration-dotted"
+                            href="https://wiki.archlinux.org">alias wiki='https://arch.wiki'</a>
+                    </div>
+                    <!-- Debian Card -->
+                    <div class="border border-outline-variant p-4 hover:bg-surface-container-low group transition-all">
+                        <div class="flex justify-between items-start mb-4">
+                            <span class="text-error font-bold">DEBIAN_STABLE</span>
+                            <span
+                                class="material-symbols-outlined text-on-surface-variant group-hover:text-primary-fixed">open_in_new</span>
+                        </div>
+                        <p class="text-body-sm text-on-surface-variant mb-4">El sistema universal. Estabilidad
+                            inquebrantable para servidores.</p>
+                        <a class="text-label-md text-primary-fixed underline decoration-dotted"
+                            href="https://www.debian.org/doc/">alias docs='https://debian.org'</a>
+                    </div>
+                    <!-- Fedora Card -->
+                    <div class="border border-outline-variant p-4 hover:bg-surface-container-low group transition-all">
+                        <div class="flex justify-between items-start mb-4">
+                            <span class="text-secondary font-bold">FEDORA_WS</span>
+                            <span
+                                class="material-symbols-outlined text-on-surface-variant group-hover:text-primary-fixed">open_in_new</span>
+                        </div>
+                        <p class="text-body-sm text-on-surface-variant mb-4">Innovación rápida. El patio de juegos de
+                            Red Hat.</p>
+                        <a class="text-label-md text-primary-fixed underline decoration-dotted"
+                            href="https://docs.fedoraproject.org">alias repo='https://fedora.prj'</a>
+                    </div>
+                    <!-- Ubuntu Card -->
+                    <div class="border border-outline-variant p-4 hover:bg-surface-container-low group transition-all">
+                        <div class="flex justify-between items-start mb-4">
+                            <span class="text-tertiary-fixed-dim font-bold">UBUNTU_LTS</span>
+                            <span
+                                class="material-symbols-outlined text-on-surface-variant group-hover:text-primary-fixed">open_in_new</span>
+                        </div>
+                        <p class="text-body-sm text-on-surface-variant mb-4">Linux para seres humanos. La puerta de
+                            entrada ideal.</p>
+                        <a class="text-label-md text-primary-fixed underline decoration-dotted"
+                            href="https://help.ubuntu.com">alias start='https://ubuntu.com'</a>
+                    </div>
+                </div>
+            </section>
+            <!-- Section: Glosario -->
+            <section class="mb-8">
+                <h2 class="font-headline-sm text-headline-sm text-primary-fixed mb-4 flex items-center">
+                    <span class="text-on-surface-variant mr-2">#</span> 4. GLOSARIO PARA RECIÉN LLEGADOS
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="border-l-2 border-outline-variant pl-4">
+                        <code class="text-primary-fixed">Kernel:</code>
+                        <p class="text-body-sm text-on-surface-variant">El motor central del sistema operativo que gestiona los
+                            recursos de hardware.</p>
+                    </div>
+                    <div class="border-l-2 border-outline-variant pl-4">
+                        <code class="text-primary-fixed">Shell:</code>
+                        <p class="text-body-sm text-on-surface-variant">La interfaz de texto que recibe tus comandos y los envía al
+                            sistema.</p>
+                    </div>
+                    <div class="border-l-2 border-outline-variant pl-4">
+                        <code class="text-primary-fixed">Root:</code>
+                        <p class="text-body-sm text-on-surface-variant">El superusuario con control total sobre todos los archivos y
+                            procesos.</p>
+                    </div>
+                    <div class="border-l-2 border-outline-variant pl-4">
+                        <code class="text-primary-fixed">Distro:</code>
+                        <p class="text-body-sm text-on-surface-variant">Una distribución específica de Linux configurada con
+                            software y utilidades propias.</p>
+                    </div>
+                    <div class="border-l-2 border-outline-variant pl-4">
+                        <code class="text-primary-fixed">TTY:</code>
+                        <p class="text-body-sm text-on-surface-variant">Teletipo o terminal física/virtual para interactuar con la
+                            shell.</p>
+                    </div>
+                </div>
+            </section>
+            <!-- Section: Comandos Esenciales -->
+            <section class="mb-8">
+                <h2 class="font-headline-sm text-headline-sm text-primary-fixed mb-4 flex items-center">
+                    <span class="text-on-surface-variant mr-2">#</span> 5. TABLA DE COMANDOS ESENCIALES
+                </h2>
+                <div class="overflow-x-auto border border-outline-variant">
+                    <table class="w-full text-left text-body-sm">
+                        <thead class="bg-surface-container-high border-b border-outline-variant">
+                            <tr>
+                                <th class="p-2 text-primary-fixed-dim">Comando</th>
+                                <th class="p-2 text-on-surface-variant">Acción (ES)</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-outline-variant">
+                            <tr>
+                                <td class="p-2"><code>ls</code></td>
+                                <td class="p-2">Lista archivos en el directorio actual</td>
+                            </tr>
+                            <tr>
+                                <td class="p-2"><code>cd</code></td>
+                                <td class="p-2">Cambia de directorio</td>
+                            </tr>
+                            <tr>
+                                <td class="p-2"><code>mkdir</code></td>
+                                <td class="p-2">Crea una nueva carpeta</td>
+                            </tr>
+                            <tr>
+                                <td class="p-2"><code>rm</code></td>
+                                <td class="p-2">Elimina archivos o directorios</td>
+                            </tr>
+                            <tr>
+                                <td class="p-2"><code>sudo</code></td>
+                                <td class="p-2">Ejecuta con privilegios de superusuario</td>
+                            </tr>
+                            <tr>
+                                <td class="p-2"><code>apt/pacman</code></td>
+                                <td class="p-2">Gestión de paquetes de software</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+            <!-- Section: Tips de Supervivencia -->
+            <section class="mb-margin-lg">
+                <h2 class="font-headline-sm text-headline-sm text-primary-fixed mb-4 flex items-center">
+                    <span class="text-on-surface-variant mr-2">#</span> 6. TIPS DE SUPERVIVENCIA
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-margin-md">
+                    <div class="bg-surface-container-high p-4 border-t-2 border-secondary-fixed">
+                        <p class="text-label-md font-bold text-secondary-fixed mb-2">[ TIP_01 ]</p>
+                        <p class="text-body-sm text-on-surface-variant">No temas a la terminal. Es una herramienta, no un laberinto.
+                        </p>
+                    </div>
+                    <div class="bg-surface-container-high p-4 border-t-2 border-tertiary-fixed">
+                        <p class="text-label-md font-bold text-tertiary-fixed mb-2">[ TIP_02 ]</p>
+                        <p class="text-body-sm text-on-surface-variant">Lee siempre el manual usando el comando
+                            <code>man [comando]</code>.</p>
+                    </div>
+                    <div class="bg-surface-container-high p-4 border-t-2 border-primary-fixed">
+                        <p class="text-label-md font-bold text-primary-fixed mb-2">[ TIP_03 ]</p>
+                        <p class="text-body-sm text-on-surface-variant">Usa el <code>TAB</code> para autocompletar rutas y comandos
+                            rápidamente.</p>
+                    </div>
+                </div>
+            </section>
+            <section class="mb-8">
+                <h2 class="font-headline-sm text-headline-sm text-primary-fixed mb-4 flex items-center">
+                    <span class="text-on-surface-variant mr-2">#</span> 7. DOCUMENTACIÓN POR DISTRIBUCIÓN
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-4">
+                    <div class="border border-outline-variant bg-surface p-4 font-code-snippet flex flex-col justify-between group hover:border-primary transition-all">
+                        <div class="space-y-2">
+                            <div class="flex items-center gap-2 text-secondary-fixed">
+                                <span class="material-symbols-outlined text-[18px]">terminal</span>
+                                <span class="font-bold">arch_linux/</span>
+                            </div>
+                            <p class="text-body-sm text-on-surface-variant">Guías de instalación avanzada, optimización del sistema base y gestión con pacman siguiendo la filosofía KISS.</p>
+                        </div>
+                        <a 
+                            routerLink="/docs/arch-linux" 
+                            class="mt-4 border border-outline bg-surface-container-high text-primary text-center py-2 text-xs font-bold tracking-wider hover:bg-primary hover:text-background active:scale-[0.98] transition-all select-none cursor-pointer">
+                            [ VER_DOCUMENTACION ]
+                        </a>
+                    </div>
+
+                    <div class="border border-outline-variant bg-surface p-4 font-code-snippet flex flex-col justify-between group hover:border-primary transition-all">
+                        <div class="space-y-2">
+                            <div class="flex items-center gap-2 text-secondary-fixed">
+                                <span class="material-symbols-outlined text-[18px]">terminal</span>
+                                <span class="font-bold">debian_stable/</span>
+                            </div>
+                            <p class="text-body-sm text-on-surface-variant">Configuración de entornos de servidores de alta disponibilidad, administración segura con apt y despliegues robustos.</p>
+                        </div>
+                        <a 
+                            routerLink="/docs/debian" 
+                            class="mt-4 border border-outline bg-surface-container-high text-primary text-center py-2 text-xs font-bold tracking-wider hover:bg-primary hover:text-background active:scale-[0.98] transition-all select-none cursor-pointer">
+                            [ VER_DOCUMENTACION ]
+                        </a>
+                    </div>
+
+                    <div class="border border-outline-variant bg-surface p-4 font-code-snippet flex flex-col justify-between group hover:border-primary transition-all">
+                        <div class="space-y-2">
+                            <div class="flex items-center gap-2 text-secondary-fixed">
+                                <span class="material-symbols-outlined text-[18px]">terminal</span>
+                                <span class="font-bold">fedora_workstation/</span>
+                            </div>
+                            <p class="text-body-sm text-on-surface-variant">Manuales sobre las últimas tecnologías upstream de desarrollo, empaquetado RPM y personalización avanzada del sistema.</p>
+                        </div>
+                        <a 
+                            routerLink="/docs/fedora" 
+                            class="mt-4 border border-outline bg-surface-container-high text-primary text-center py-2 text-xs font-bold tracking-wider hover:bg-primary hover:text-background active:scale-[0.98] transition-all select-none cursor-pointer">
+                            [ VER_DOCUMENTACION ]
+                        </a>
+                    </div>
+
+                    <div class="border border-outline-variant bg-surface p-4 font-code-snippet flex flex-col justify-between group hover:border-primary transition-all">
+                        <div class="space-y-2">
+                            <div class="flex items-center gap-2 text-secondary-fixed">
+                                <span class="material-symbols-outlined text-[18px]">terminal</span>
+                                <span class="font-bold">ubuntu_lts/</span>
+                            </div>
+                            <p class="text-body-sm text-on-surface-variant">Configuraciones base de producción empresarial, automatización de tareas y gestión híbrida de paquetes con apt y snap.</p>
+                        </div>
+                        <a 
+                            routerLink="/docs/ubuntu" 
+                            class="mt-4 border border-outline bg-surface-container-high text-primary text-center py-2 text-xs font-bold tracking-wider hover:bg-primary hover:text-background active:scale-[0.98] transition-all select-none cursor-pointer">
+                            [ VER_DOCUMENTACION ]
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <!-- Terminal Prompt at bottom of document -->
+            <div class="flex items-center gap-2 text-primary-fixed-dim mt-8">
+                <span>root@linux_club:~$</span>
+                <span class="bg-primary-fixed-dim w-2.5 h-5 cursor-blink"></span>
+            </div>
+        </div>
+    </div>
+    <!-- Virtual Keyboard / Status Visual (Atmospheric) -->
+    <div class="absolute right-4 bottom-10 hidden lg:block opacity-20 pointer-events-none">
+        <pre class="text-[8px] leading-tight font-code-snippet text-primary-fixed">   _      _                      
+  | |    (_)                     
+  | |     _ _ __  _   ___  __    
+  | |    | | '_ \| | | \ \/ /    
+  | |____| | | | | |_| |&gt;  &lt;     
+  |______|_|_| |_|\__,_/_/\_\    
+                </pre>
+    </div>
+</main>

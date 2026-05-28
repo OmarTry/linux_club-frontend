@@ -1,9 +1,9 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 
 @Component({
-  selector: 'app-doc-detail-page',
+  selector: 'app-people-page',
   imports: [],
-  templateUrl: './doc_detail-page.html',
+  templateUrl: './people-page.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export default class DocDetailPage {}
+export default class PeoplePage {}

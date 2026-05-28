@@ -1,1 +1,257 @@
-<p>projects_showcase-page works!</p>,
+<!-- Main Content Area -->
+<main class="flex-1 ml-0 p-margin-md overflow-y-auto pb-12">
+    <!-- Terminal Window Container -->
+    <div class="border border-outline-variant bg-surface flex flex-col h-full min-h-200">
+        <!-- Terminal Header -->
+        <div
+            class="h-8 bg-surface-container-high border-b border-outline-variant flex items-center justify-between px-3">
+            <div class="flex items-center gap-2">
+                <div class="flex gap-1.5">
+                    <div class="w-3 h-3 rounded-full bg-[#ff5f56]"></div>
+                    <div class="w-3 h-3 rounded-full bg-[#ffbd2e]"></div>
+                    <div class="w-3 h-3 rounded-full bg-[#27c93f]"></div>
+                </div>
+                <span class="ml-4 font-code-snippet text-on-surface-variant text-xs">~/proyectos_destacados — bash —
+                    124x48</span>
+            </div>
+            <div class="flex gap-4 font-code-snippet text-[10px] text-outline">
+                <span>UTF-8</span>
+                <span>0:0:1</span>
+            </div>
+        </div>
+        <!-- Terminal Content -->
+        <div class="p-8 font-code-snippet flex flex-col gap-10">
+            <!-- Search/Filter Command -->
+            <div class="space-y-3">
+                <div class="flex items-center gap-2">
+                    <span class="text-primary-fixed">usuario@linux_club</span>
+                    <span class="text-on-surface-variant">:</span>
+                    <span class="text-secondary">~/proyectos</span>
+                    <span class="text-on-surface-variant">$ Buscando proyectos destacados...</span>
+                </div>
+                <div class="text-secondary/80 italic text-body-md border-l-2 border-secondary/30 pl-4 py-1">
+                    Se han encontrado 4 repositorios de alto impacto en el sistema.
+                </div>
+            </div>
+            <div class="p-6 border border-primary-fixed/30 bg-primary-fixed/5 text-center space-y-4">
+                <p class="text-body-lg font-body-lg text-on-surface leading-relaxed">
+                    ¿Tienes un proyecto increíble? ¡Compártelo con la comunidad y haz que el kernel del club crezca!
+                </p>
+                <div class="flex justify-center">
+                    <a 
+                    routerLink="/projects/submit-project"
+                    class="group relative flex items-center gap-4 bg-primary-fixed text-on-primary-fixed px-8 py-4 font-headline-sm hover:bg-background hover:text-primary-fixed border-2 border-primary-fixed transition-all duration-200 active:scale-95 cursor-pointer">
+                        <span class="">$ sudo submit-project</span>
+                        <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">rocket_launch</span>
+                        <div class="absolute -bottom-1 -right-1 w-2 h-2 bg-primary-fixed"></div>
+                        <div class="absolute -top-1 -left-1 w-2 h-2 bg-primary-fixed"></div>
+                    </a>
+                </div>
+            </div>
+            <!-- Project Cards Grid -->
+            <div class="grid grid-cols-1 xl:grid-cols-2 gap-8">
+                <!-- Card 1 -->
+                <div
+                    class="group border border-outline-variant hover:border-primary transition-all duration-300 bg-surface-container-lowest shadow-lg">
+                    <div
+                        class="bg-surface-container px-4 py-2 border-b border-outline-variant flex justify-between items-center">
+                        <span class="text-secondary font-bold">kernel-patch-v2.c</span>
+                        <span class="text-[10px] text-outline uppercase tracking-tighter">actualizado hace: 2h</span>
+                    </div>
+                    <div class="p-6 space-y-6">
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <h3 class="text-primary-fixed text-xl font-bold font-headline-sm">Parche de Kernel v2
+                                </h3>
+                                <p class="text-sm text-on-surface-variant mt-2">Autor: <span
+                                        class="text-tertiary">root@nebula</span></p>
+                            </div>
+                            <div
+                                class="bg-on-primary-fixed-variant/30 text-primary-fixed text-[10px] px-3 py-1 border border-primary-fixed/30 font-bold">
+                                LENGUAJE: RUST
+                            </div>
+                        </div>
+                        <div
+                            class="text-on-surface text-body-lg leading-relaxed bg-surface-container-high/40 p-4 border-l-2 border-primary-fixed/20">
+                            <span class="text-outline">/*</span><br />
+                            Un parche optimizado para mejorar el rendimiento en hilos de baja latencia.
+                            Diseñado para kernels 5.15 LTS con enfoque en la priorización de procesos.<br />
+                            <span class="text-outline">*/</span>
+                        </div>
+                        <div class="grid grid-cols-3 gap-2 py-3 border-y border-outline-variant/30 text-xs">
+                            <div class="flex items-center gap-1.5"><span
+                                    class="material-symbols-outlined text-sm text-primary"
+                                    style="font-variation-settings: 'FILL' 1;">star</span> 2.4k</div>
+                            <div class="flex items-center gap-1.5"><span
+                                    class="material-symbols-outlined text-sm">fork_right</span> 412</div>
+                            <div class="flex items-center gap-1.5"><span
+                                    class="material-symbols-outlined text-sm">gavel</span> MIT</div>
+                        </div>
+                        <div class="flex flex-col gap-3">
+                            <div
+                                class="bg-surface-container-high border border-outline-variant px-3 py-2 text-xs text-on-surface-variant flex items-center opacity-70">
+                                <span class="text-primary mr-2">$</span> git clone https://git.lc/kpatch.git
+                            </div>
+                            <button
+                                class="bg-primary text-on-primary font-bold px-6 py-2.5 text-sm hover:brightness-110 active:scale-95 transition-all w-full md:w-auto self-end">
+                                CLONAR
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div
+                    class="group border border-outline-variant hover:border-primary transition-all duration-300 bg-surface-container-lowest shadow-lg">
+                    <div
+                        class="bg-surface-container px-4 py-2 border-b border-outline-variant flex justify-between items-center">
+                        <span class="text-secondary font-bold">distro-manager.py</span>
+                        <span class="text-[10px] text-outline uppercase tracking-tighter">actualizado hace: 1d</span>
+                    </div>
+                    <div class="p-6 space-y-6">
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <h3 class="text-primary-fixed text-xl font-bold font-headline-sm">Instalador Voyager
+                                </h3>
+                                <p class="text-sm text-on-surface-variant mt-2">Autor: <span
+                                        class="text-tertiary">arch_fiend@vger</span></p>
+                            </div>
+                            <div
+                                class="bg-secondary-fixed-dim/30 text-secondary-fixed-dim text-[10px] px-3 py-1 border border-secondary-fixed-dim/30 font-bold">
+                                LENGUAJE: PYTHON
+                            </div>
+                        </div>
+                        <div
+                            class="text-on-surface text-body-lg leading-relaxed bg-surface-container-high/40 p-4 border-l-2 border-primary-fixed/20">
+                            <span class="text-outline">/*</span><br />
+                            Script minimalista para la instalación de Arch Linux con gestores de ventanas
+                            tipo tiling preconfigurados y mejoras para la terminal.<br />
+                            <span class="text-outline">*/</span>
+                        </div>
+                        <div class="grid grid-cols-3 gap-2 py-3 border-y border-outline-variant/30 text-xs">
+                            <div class="flex items-center gap-1.5"><span
+                                    class="material-symbols-outlined text-sm text-primary"
+                                    style="font-variation-settings: 'FILL' 1;">star</span> 890</div>
+                            <div class="flex items-center gap-1.5"><span
+                                    class="material-symbols-outlined text-sm">fork_right</span> 156</div>
+                            <div class="flex items-center gap-1.5"><span
+                                    class="material-symbols-outlined text-sm">gavel</span> GPLv3</div>
+                        </div>
+                        <div class="flex flex-col gap-3">
+                            <div
+                                class="bg-surface-container-high border border-outline-variant px-3 py-2 text-xs text-on-surface-variant flex items-center opacity-70">
+                                <span class="text-primary mr-2">$</span> git clone https://git.lc/voyager.git
+                            </div>
+                            <button
+                                class="bg-primary text-on-primary font-bold px-6 py-2.5 text-sm hover:brightness-110 active:scale-95 transition-all w-full md:w-auto self-end">
+                                CLONAR
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div
+                    class="group border border-outline-variant hover:border-primary transition-all duration-300 bg-surface-container-lowest shadow-lg">
+                    <div
+                        class="bg-surface-container px-4 py-2 border-b border-outline-variant flex justify-between items-center">
+                        <span class="text-secondary font-bold">proxy-rotator.go</span>
+                        <span class="text-[10px] text-outline uppercase tracking-tighter">actualizado hace: 4h</span>
+                    </div>
+                    <div class="p-6 space-y-6">
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <h3 class="text-primary-fixed text-xl font-bold font-headline-sm">Anon-Shield Proxy</h3>
+                                <p class="text-sm text-on-surface-variant mt-2">Autor: <span
+                                        class="text-tertiary">ghost@p0rt</span></p>
+                            </div>
+                            <div
+                                class="bg-tertiary/30 text-tertiary text-[10px] px-3 py-1 border border-tertiary/30 font-bold">
+                                LENGUAJE: GOLANG
+                            </div>
+                        </div>
+                        <div
+                            class="text-on-surface text-body-lg leading-relaxed bg-surface-container-high/40 p-4 border-l-2 border-primary-fixed/20">
+                            <span class="text-outline">/*</span><br />
+                            Servicio de rotación de proxies de alto rendimiento enfocado en la privacidad
+                            para herramientas de investigación automatizadas y scrapers.<br />
+                            <span class="text-outline">*/</span>
+                        </div>
+                        <div class="grid grid-cols-3 gap-2 py-3 border-y border-outline-variant/30 text-xs">
+                            <div class="flex items-center gap-1.5"><span
+                                    class="material-symbols-outlined text-sm text-primary"
+                                    style="font-variation-settings: 'FILL' 1;">star</span> 1.2k</div>
+                            <div class="flex items-center gap-1.5"><span
+                                    class="material-symbols-outlined text-sm">fork_right</span> 203</div>
+                            <div class="flex items-center gap-1.5"><span
+                                    class="material-symbols-outlined text-sm">gavel</span> APACHE2</div>
+                        </div>
+                        <div class="flex flex-col gap-3">
+                            <div
+                                class="bg-surface-container-high border border-outline-variant px-3 py-2 text-xs text-on-surface-variant flex items-center opacity-70">
+                                <span class="text-primary mr-2">$</span> git clone https://git.lc/shield.git
+                            </div>
+                            <button
+                                class="bg-primary text-on-primary font-bold px-6 py-2.5 text-sm hover:brightness-110 active:scale-95 transition-all w-full md:w-auto self-end">
+                                CLONAR
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 4 -->
+                <div
+                    class="group border border-outline-variant hover:border-primary transition-all duration-300 bg-surface-container-lowest shadow-lg">
+                    <div
+                        class="bg-surface-container px-4 py-2 border-b border-outline-variant flex justify-between items-center">
+                        <span class="text-secondary font-bold">vulkan-renderer.cpp</span>
+                        <span class="text-[10px] text-outline uppercase tracking-tighter">actualizado hace: 12m</span>
+                    </div>
+                    <div class="p-6 space-y-6">
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <h3 class="text-primary-fixed text-xl font-bold font-headline-sm">Motor Neon Core</h3>
+                                <p class="text-sm text-on-surface-variant mt-2">Autor: <span
+                                        class="text-tertiary">gfx_wizard@os</span></p>
+                            </div>
+                            <div class="bg-error/30 text-error text-[10px] px-3 py-1 border border-error/30 font-bold">
+                                LENGUAJE: C++
+                            </div>
+                        </div>
+                        <div
+                            class="text-on-surface text-body-lg leading-relaxed bg-surface-container-high/40 p-4 border-l-2 border-primary-fixed/20">
+                            <span class="text-outline">/*</span><br />
+                            Núcleo de trazado de rayos en tiempo real utilizando la API Vulkan.
+                            Incluye anti-aliasing temporal y materiales PBR avanzados.<br />
+                            <span class="text-outline">*/</span>
+                        </div>
+                        <div class="grid grid-cols-3 gap-2 py-3 border-y border-outline-variant/30 text-xs">
+                            <div class="flex items-center gap-1.5"><span
+                                    class="material-symbols-outlined text-sm text-primary"
+                                    style="font-variation-settings: 'FILL' 1;">star</span> 4.5k</div>
+                            <div class="flex items-center gap-1.5"><span
+                                    class="material-symbols-outlined text-sm">fork_right</span> 891</div>
+                            <div class="flex items-center gap-1.5"><span
+                                    class="material-symbols-outlined text-sm">gavel</span> BSD3</div>
+                        </div>
+                        <div class="flex flex-col gap-3">
+                            <div
+                                class="bg-surface-container-high border border-outline-variant px-3 py-2 text-xs text-on-surface-variant flex items-center opacity-70">
+                                <span class="text-primary mr-2">$</span> git clone https://git.lc/neon.git
+                            </div>
+                            <button
+                                class="bg-primary text-on-primary font-bold px-6 py-2.5 text-sm hover:brightness-110 active:scale-95 transition-all w-full md:w-auto self-end">
+                                CLONAR
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Shell Input -->
+            <div class="mt-4 flex items-center gap-2">
+                <span class="text-primary-fixed">usuario@linux_club</span>
+                <span class="text-on-surface-variant">:</span>
+                <span class="text-secondary">~/proyectos</span>
+                <span class="text-on-surface-variant">$</span>
+                <span class="w-2.5 h-5 bg-primary-fixed cursor-blink"></span>
+            </div>
+        </div>
+    </div>
+</main>

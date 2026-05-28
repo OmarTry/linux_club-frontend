@@ -7,8 +7,23 @@ export const DOCS_ROUTES: Routes = [
         loadComponent: () => import('./pages/doc_list-page/doc_list-page')
     },
     {
-        path: ':slug',
+        path: 'arch-linux',
         // Este componente lee el parámetro ':slug' de la URL para traer el post específico desde tu FastAPI
-        loadComponent: () => import('./pages/doc_detail-page/doc_detail-page')
+        loadComponent: () => import('./pages/arch_docs-page/arch_docs-page')
+    },
+    {
+        path: 'debian',
+        // Este componente lee el parámetro ':slug' de la URL para traer el post específico desde tu FastAPI
+        loadComponent: () => import('./pages/debian_docs-page/debian_docs-page')
+    },
+    {
+        path: 'fedora',
+        // Este componente lee el parámetro ':slug' de la URL para traer el post específico desde tu FastAPI
+        loadComponent: () => import('./pages/fedora_docs-page/fedora_docs-page')
+    },
+    {
+        path: 'ubuntu',
+        // Este componente lee el parámetro ':slug' de la URL para traer el post específico desde tu FastAPI
+        loadComponent: () => import('./pages/ubuntu_docs-page/ubuntu_docs-page')
     }
 ];

@@ -6,7 +6,7 @@ export const PROJECTS_ROUTES: Routes = [
         loadComponent: () => import('./pages/projects_showcase-page/projects_showcase-page')
     },
     {
-        path: ':slug',
+        path: 'submit-project',
         loadComponent: () => import('./pages/projects_submit_page/projects_submit_page')
     }
 ];
