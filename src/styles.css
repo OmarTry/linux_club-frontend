@@ -1,0 +1,154 @@
+/* 1. Importas el motor base de Tailwind v4 */
+@import 'tailwindcss';
+
+/* 2. Configuración del Tema usando variables CSS nativas (Reemplaza a tailwind.config.js) */
+@theme {
+  /* Modos */
+  --variant-dark: class(class);
+
+  /* Paleta de Colores personalizada */
+  --color-inverse-primary: #006e2b;
+  --color-surface-container-high: #272935;
+  --color-surface: #11131e;
+  --color-on-tertiary: #2f3300;
+  --color-secondary-container: #008092;
+  --color-inverse-surface: #e1e1f1;
+  --color-surface-tint: #31e368;
+  --color-on-primary-container: #00702c;
+  --color-tertiary-fixed-dim: #c5cd65;
+  --color-on-surface: #e1e1f1;
+  --color-surface-dim: #11131e;
+  --color-primary-container: #50fa7b;
+  --color-on-secondary-fixed: #001f25;
+  --color-surface-container: #1d1f2b;
+  --color-on-tertiary-fixed: #1b1d00;
+  --color-on-tertiary-fixed-variant: #454b00;
+  --color-error-container: #93000a;
+  --color-tertiary: #f8ffa2;
+  --color-tertiary-container: #dae378;
+  --color-on-tertiary-container: #5e6500;
+  --color-on-primary: #003912;
+  --color-secondary-fixed-dim: #75d4e8;
+  --color-on-secondary: #00363e;
+  --color-surface-container-low: #191b26;
+  --color-error: #ffb4ab;
+  --color-on-error: #690005;
+  --color-surface-variant: #323440;
+  --color-outline-variant: #3c4a3c;
+  --color-surface-container-lowest: #0b0e18;
+  --color-tertiary-fixed: #e1ea7e;
+  --color-on-secondary-fixed-variant: #004e5a;
+  --color-surface-container-highest: #323440;
+  --color-primary-fixed-dim: #31e368;
+  --color-on-secondary-container: #f8fdff;
+  --color-background: #11131e;
+  --color-secondary-fixed: #a3eeff;
+  --color-on-surface-variant: #bbcbb8;
+  --color-on-primary-fixed: #002108;
+  --color-surface-bright: #373845;
+  --color-outline: #859583;
+  --color-secondary: #75d4e8;
+  --color-on-background: #e1e1f1;
+  --color-primary: #e8ffe4;
+  --color-on-primary-fixed-variant: #00531e;
+  --color-on-error-container: #ffdad6;
+  --color-primary-fixed: #69ff88;
+  --color-inverse-on-surface: #2e303c;
+
+  /* Bordes Redondeados */
+  --radius-DEFAULT: 0.25rem;
+  --radius-lg: 0.5rem;
+  --radius-xl: 0.75rem;
+  --radius-full: 9999px;
+
+  /* Espaciados Personalizados */
+  --spacing-margin-md: 16px;
+  --spacing-gutter: 1px;
+  --spacing-margin-lg: 24px;
+  --spacing-window-padding: 12px;
+  --spacing-margin-sm: 8px;
+  --spacing-unit: 4px;
+
+  /* Tipografías (Familias) */
+  --font-body-sm: 'JetBrains Mono', monospace;
+  --font-label-lg: 'JetBrains Mono', monospace;
+  --font-headline-md: 'Space Mono', monospace;
+  --font-headline-lg: 'Space Mono', monospace;
+  --font-headline-sm: 'Space Mono', monospace;
+  --font-code-snippet: 'JetBrains Mono', monospace;
+  --font-label-md: 'JetBrains Mono', monospace;
+  --font-body-md: 'JetBrains Mono', monospace;
+  --font-body-lg: 'JetBrains Mono', monospace;
+
+  /* Tamaños de Fuente y Alturas de Línea integrados en v4 */
+  --text-body-sm: 12px;
+  --text-body-sm--line-height: 1.5;
+  --text-label-lg: 14px;
+  --text-label-lg--line-height: 1.2;
+  --text-label-lg--font-weight: 700;
+  --text-headline-md: 24px;
+  --text-headline-md--line-height: 1.2;
+  --text-headline-md--font-weight: 700;
+  --text-headline-lg: 32px;
+  --text-headline-lg--line-height: 1.2;
+  --text-headline-lg--letter-spacing: -0.02em;
+  --text-headline-lg--font-weight: 700;
+  --text-headline-sm: 20px;
+  --text-headline-sm--line-height: 1.2;
+  --text-headline-sm--font-weight: 700;
+  --text-code-snippet: 13px;
+  --text-code-snippet--line-height: 1.4;
+  --text-label-md: 12px;
+  --text-label-md--line-height: 1.2;
+  --text-label-md--font-weight: 700;
+  --text-body-md: 14px;
+  --text-body-md--line-height: 1.5;
+  --text-body-lg: 16px;
+  --text-body-lg--line-height: 1.6;
+}
+
+/* 3. Tus Clases CSS Personalizadas y Animaciones Nativas */
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(2px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.4s ease-out forwards;
+}
+
+.cursor-blink {
+  animation: blink 1s infinite;
+  display: inline-block;
+  width: 8px;
+  height: 1.2em;
+  background-color: #50fa7b;
+  vertical-align: middle;
+}
+
+.terminal-window {
+  box-shadow: 0 0 0 1px #44475a;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+body {
+  background-color: #11131e;
+}
